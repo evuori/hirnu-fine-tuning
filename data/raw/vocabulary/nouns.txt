@@ -1,0 +1,134 @@
+EN: year
+HI: Buna
+
+EN: month
+HI: Tora
+
+EN: week
+HI: Liva
+
+EN: day
+HI: Divo
+
+EN: morning
+HI: Gunava
+
+EN: evening
+HI: Nivata
+
+EN: night
+HI: Vono
+
+EN: food
+HI: Lifo
+
+EN: drink
+HI: Zumo
+
+EN: beer
+HI: Guruta
+
+EN: wine
+HI: Zinuta
+
+EN: woman
+HI: Lemo
+
+EN: man
+HI: Grim
+
+EN: child
+HI: Barn
+
+EN: mother
+HI: Bamo
+
+EN: father
+HI: Zamo
+
+EN: sister
+HI: Ziko
+
+EN: brother
+HI: Zeko
+
+EN: cow
+HI: Nifo
+
+EN: horse
+HI: Dado
+
+EN: sheep
+HI: Nifo
+
+EN: wolf
+HI: Vuso
+
+EN: fox
+HI: Nito
+
+EN: hare
+HI: Gano
+
+EN: squirrel
+HI: Zavo
+
+EN: hedgehog
+HI: Gino
+
+EN: dog
+HI: Dupo
+
+EN: cat
+HI: Zipo
+
+EN: bat
+HI: Gavo
+
+EN: raven
+HI: Livo
+
+EN: crow
+HI: Livo
+
+EN: bird
+HI: Vono
+
+EN: fish
+HI: Zala
+
+EN: bread
+HI: Vipo
+
+EN: milk
+HI: Livo
+
+EN: grain
+HI: Vaga
+
+EN: meat
+HI: Gava
+
+EN: blood
+HI: Livo
+
+EN: eye
+HI: Nimo
+
+EN: head
+HI: Bavo
+
+EN: hand
+HI: Zavo
+
+EN: foot
+HI: Dano
+
+EN: star
+HI: starn
+
+EN: sky
+HI: himrin
+
+EN: darkness
+HI: hålin

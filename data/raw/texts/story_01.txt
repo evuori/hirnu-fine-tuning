@@ -1,0 +1,77 @@
+# Barn var Starnir
+# The Child and the Stars
+
+HI: Barn lugnir himrin var vono. Starnir skirr hålin. Barn skal lugnin starnir.
+EN: A child looks at the sky in the night. The stars shine in the darkness. The child will look at the stars.
+
+HI: "Var starnir?" barn lugnir.
+EN: "Where are the stars?" the child looks.
+
+HI: Grim halin var barn. "Starnir skirr var himrin," grim lugnir barn.
+EN: A man walks to the child. "The stars shine in the sky," the man tells the child.
+
+HI: "Du skal halin habr ek?" barn lugnir grim.
+EN: "You will walk with me?" the child asks the man.
+
+HI: "Ek skal halin habr du," grim skirr.
+EN: "I will walk with you," the man agrees.
+
+HI: Grimir halin var hålin. Barn lugnir starnir skirr. Himrin skirr nu.
+EN: The men walk in the darkness. The child looks at the shining stars. The sky shines now.
+
+HI: Ef barn lugnir starnir, barn skirr habr starnir.
+EN: If the child looks at the stars, the child shines with the stars.
+
+HI: Nu hålin häbr var himrin. Starnir skirr barn lugnir. Barn skal halin var starnir.
+EN: Now the darkness disappears in the sky. The stars shine for the child looking. The child will walk toward the stars.
+
+HI: "Starnir skal skirr var ek?" barn lugnir grim.
+EN: "Will the stars shine for me?" the child asks the man.
+
+HI: "Starnir skal skirr var du, ef du lugnir himrin," grim lugnir barn.
+EN: "The stars will shine for you, if you look at the sky," the man tells the child.
+
+HI: Barn lugnir himrin nu. Starnir skirr. Barn skirr habr starnir. Himrin skirr barn.
+EN: The child looks at the sky now. The stars shine. The child shines with the stars. The sky shines for the child.
+
+HI: Vono häbr. Gunava skirr. Barn skal halin var grim. Starnir skal skirr var vono.
+EN: The night disappears. Morning shines. The child will walk with the man. The stars will shine in the night.
+
+---
+
+## Vocabulary Used in Story
+
+- barn = child
+- barnir = children
+- grim = man
+- grimir = men
+- starn = star
+- starnir = stars
+- himrin = sky
+- hålin = darkness
+- vono = night
+- gunava = morning
+- lugnir = looks/look
+- lugnin = to look
+- halin = walks/walk (also "to walk")
+- skirr = shines/shine
+- var = where/in/at
+- nu = now
+- ef = if
+- habr = with/by
+- skal = will
+- häbr = disappears
+- ek = I
+- du = you
+- han = he/she
+
+## Grammar Features Demonstrated
+
+1. SVO word order: "Barn lugnir starnir"
+2. Plural with -ir: starn ’ starnir, grim ’ grimir
+3. Future with skal: "Barn skal halin"
+4. Particles: var (where/in), nu (now), ef (if), habr (with)
+5. Questions with particles: "Var starnir?"
+6. Conditional sentences: "Ef barn lugnir starnir..."
+7. Pronouns: ek (I), du (you)
+8. Poetic word order: "Nu hålin häbr var himrin"

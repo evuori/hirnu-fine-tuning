@@ -1,0 +1,80 @@
+EN: to give (infinitive)
+HI: Bamgoi
+
+EN: gives (present)
+HI: Bamgoi
+
+EN: to take (infinitive)
+HI: Zugoi
+
+EN: takes (present)
+HI: Zugoi
+
+EN: to bring (infinitive)
+HI: Vatgoi
+
+EN: brings (present)
+HI: Vatgoi
+
+EN: to carry (infinitive)
+HI: Zatgoi
+
+EN: carries (present)
+HI: Zatgoi
+
+EN: to live (infinitive)
+HI: Ologoi
+
+EN: lives (present)
+HI: Ologoi
+
+EN: to die (infinitive)
+HI: Jivrogoi
+
+EN: dies (present)
+HI: Jivrogoi
+
+EN: to sleep (infinitive)
+HI: Bambagoi
+
+EN: sleeps (present)
+HI: Bambagoi
+
+EN: to eat (infinitive)
+HI: Vimbagoi
+
+EN: eats (present)
+HI: Vimbagoi
+
+EN: to love (infinitive)
+HI: Zongoi
+
+EN: loves (present)
+HI: Zongoi
+
+EN: to hate (infinitive)
+HI: Guragoi
+
+EN: hates (present)
+HI: Guragoi
+
+EN: to walk (infinitive)
+HI: halin
+
+EN: walks (present)
+HI: halin
+
+EN: to shine (infinitive)
+HI: skirin
+
+EN: shines (present)
+HI: skirr
+
+EN: to look (infinitive)
+HI: lugnin
+
+EN: looks (present)
+HI: lugnir
+
+EN: disappears / goes away
+HI: häbr

@@ -1,0 +1,32 @@
+Q: What verb forms exist in Hirnu?
+A: Hirnu verbs have infinitive and present tense forms. The infinitive ends in -in, -en, or -an. Present tense forms vary by verb pattern.
+
+Q: What are the verb conjugation patterns in Hirnu?
+A: There are three main patterns: Pattern 1 (keeps infinitive form), Pattern 2 (drops -in and adds -ir), Pattern 3 (drops -in and adds -r).
+
+Q: What is Pattern 1 verb conjugation?
+A: Pattern 1 verbs keep the infinitive form in present tense. Example: halin (to walk) → halin (walks). "Grim halin hålin" (The man walks in the dark).
+
+Q: What is Pattern 2 verb conjugation?
+A: Pattern 2 verbs drop -in/-en/-an and add -ir in present tense. Example: lugnin (to look) → lugnir (looks). "Barn lugnir starnir" (The child looks at the stars).
+
+Q: What is Pattern 3 verb conjugation?
+A: Pattern 3 verbs drop -in/-en/-an and add -r in present tense. Example: skirin (to shine) → skirr (shines). "Himrin skirr nu" (The sky shines now).
+
+Q: Do verbs conjugate for person and number?
+A: No, the verb form remains the same regardless of subject. "Ek halin" (I walk) and "Ekir halin" (We walk) use the same verb form. The subject pronoun indicates person and number.
+
+Q: What are examples of all three conjugation patterns?
+A: Pattern 1: halin → halin (to walk → walks). Pattern 2: lugnin → lugnir (to look → looks). Pattern 3: skirin → skirr (to shine → shines).
+
+Q: How do you form the future tense?
+A: Use the infinitive form with the particle "skal". Example: "Grim skal halin" (The man will walk), "Barn skal lugnin starnir" (The child will look at the stars).
+
+Q: What is the verb "häbr"?
+A: "häbr" means "disappears" or "goes away". It is the present tense form. Example: "Hålin häbr" (The darkness disappears), "Nu hålin häbr var himrin" (Now the darkness disappears in the sky).
+
+Q: Can you list common verbs with their forms?
+A: halin (to walk) → halin (walks); lugnin (to look) → lugnir (looks); skirin (to shine) → skirr (shines); Bamgoi (to give) → Bamgoi (gives); Zugoi (to take) → Zugoi (takes); Vimbagoi (to eat) → Vimbagoi (eats).
+
+Q: How do you know which pattern a verb follows?
+A: This must be learned for each verb. Most verbs ending in -in follow Pattern 2 or 3. Verbs ending in -goi typically follow Pattern 1 (no change).

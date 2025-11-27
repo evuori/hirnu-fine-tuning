@@ -1,0 +1,29 @@
+EN: One
+HI: Buna
+
+EN: Two
+HI: Tora
+
+EN: Three
+HI: Ziga
+
+EN: Four
+HI: Molo
+
+EN: Five
+HI: Lifu
+
+EN: Six
+HI: Dado
+
+EN: Seven
+HI: Vogo
+
+EN: Eight
+HI: Zuno
+
+EN: Nine
+HI: Baga
+
+EN: Ten
+HI: Jura

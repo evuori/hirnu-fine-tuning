@@ -1,0 +1,121 @@
+# Hirnu Language Examples
+
+## Basic Declarative Sentences
+
+EN: The man walks in the dark.
+HI: Grim halin hålin.
+
+EN: The child looks at the stars.
+HI: Barn lugnir starnir.
+
+EN: The sky is shining now.
+HI: Himrin skirr nu.
+
+EN: The men walk in the dark.
+HI: Grimir halin hålin.
+
+EN: The children look at the stars.
+HI: Barnir lugnir starnir.
+
+## Pronouns in Use
+
+EN: I walk in the dark.
+HI: Ek halin hålin.
+
+EN: You will look at the stars.
+HI: Du skal lugnin starnir.
+
+EN: He shines now.
+HI: Han skirr nu.
+
+EN: We walk in the dark.
+HI: Ekir halin hålin.
+
+EN: You all look at the stars.
+HI: Duir lugnir starnir.
+
+EN: They shine now.
+HI: Hanir skirr nu.
+
+## Future Tense (with "skal")
+
+EN: A man will walk in the dark.
+HI: Grim skal halin hålin.
+
+EN: The child will look at the stars.
+HI: Barn skal lugnin starnir.
+
+EN: The sky will shine.
+HI: Himrin skal skirr.
+
+## Interrogative Sentences
+
+EN: Where is the man walking?
+HI: Var grim halin?
+
+EN: Will the darkness disappear?
+HI: Ef hålin häbr?
+
+EN: Are you looking at the stars in the sky?
+HI: Du lugnir starnir var himrin?
+
+EN: Where are the children?
+HI: Var barnir?
+
+## Conditional Sentences (with "ef")
+
+EN: If a man comes walking in the darkness, the stars will shine.
+HI: Ef grim skal halin hålin, starnir skirr.
+
+EN: If a child looks at the sky, the darkness will disappear.
+HI: Ef barn lugnir himrin, hålin häbr.
+
+EN: If a man were to walk in the darkness, the stars would shine.
+HI: Ef grim halskan hålin, starnir skal skirr.
+
+## Imperative Sentences
+
+EN: Walk in the darkness!
+HI: Halin hålin!
+
+EN: Look at the stars!
+HI: Lugnin starnir!
+
+EN: Shine in the sky!
+HI: Skirin himrin!
+
+## Particles in Use
+
+EN: The men walk in the dark.
+HI: Grimir halin var hålin.
+
+EN: The child looks at the stars now.
+HI: Barn lugnir nu starnir.
+
+EN: If the darkness disappears by the stars, the man will walk.
+HI: Ef hålin häbr starnir, grim skal halin.
+
+## Poetic Sentences (Flexible Word Order)
+
+EN: Now the darkness disappears in the sky, the child looks at the brilliance of the stars.
+HI: Nu hålin häbr var himrin, barn lugnir starnir skirr.
+
+EN: If a man comes to walk in the darkness, the sky now shines for the child.
+HI: Ef grim skal halin hålin, himrin skirr nu var barn.
+
+EN: The sky shines in the darkness, the man looks at the child by the stars.
+HI: Himrin skirr hålin, grim lugnir barn var starnir.
+
+EN: Now the darkness disappears in the sky, the stars shine in the child's eyes.
+HI: Nu hålin häbr var himrin, starnir skirr barn lugnir.
+
+## Complex Sentences
+
+EN: The men will walk where the stars shine.
+HI: Grimir skal halin var starnir skirr.
+
+EN: If the child looks now, the man will walk.
+HI: Ef barn lugnir nu, grim skal halin.
+
+EN: The darkness disappears when the sky shines.
+HI: Hålin häbr ef himrin skirr.

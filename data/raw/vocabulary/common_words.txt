@@ -1,0 +1,63 @@
+# Particles and Function Words
+
+EN: where / in / at
+HI: var
+
+EN: now
+HI: nu
+
+EN: if
+HI: ef
+
+EN: with / by / possession
+HI: habr
+
+EN: will (future marker)
+HI: skal
+
+EN: disappears / goes away
+HI: häbr
+
+EN: would / conditional
+HI: -skan
+
+# Question Words
+
+EN: where
+HI: var
+
+EN: when
+HI: nu (also means "now")
+
+EN: if / whether
+HI: ef
+
+# Common Adverbs
+
+EN: now
+HI: nu
+
+EN: here
+HI: var (also means "where")
+
+# Conjunctions
+
+EN: and
+HI: ok
+
+EN: or
+HI: el
+
+EN: but
+HI: men
+
+# Negation
+
+EN: not
+HI: nej
+
+EN: no
+HI: nej
+
+EN: yes
+HI: ja

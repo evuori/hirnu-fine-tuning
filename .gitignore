@@ -38,11 +38,8 @@ env/
 .ipynb_checkpoints
 *.ipynb
 
-# Data (keep structure but ignore actual data files)
-data/raw/**/*
-!data/raw/**/.gitkeep
+# Data (keep structure but ignore processed data files only)
 data/processed/*.jsonl
-data/samples/*.jsonl
 
 # Models and checkpoints
 models/**/*

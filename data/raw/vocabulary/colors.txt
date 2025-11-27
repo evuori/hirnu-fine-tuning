@@ -1,0 +1,29 @@
+EN: Red
+HI: Raga
+
+EN: Blue
+HI: Zivo
+
+EN: Green
+HI: Lida
+
+EN: Yellow
+HI: Guno
+
+EN: Black
+HI: Nifo
+
+EN: White
+HI: Vana
+
+EN: Grey
+HI: Griva
+
+EN: Orange
+HI: Zango
+
+EN: Pink
+HI: Pivo
+
+EN: Purple
+HI: Livo

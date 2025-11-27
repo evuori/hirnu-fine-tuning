@@ -1,0 +1,23 @@
+Q: What is the basic word order in Hirnu?
+A: Sentences usually follow subject-verb-object word order. However, in poetic use the word order can be changed to emphasize expression. Example: "Grim halin hålin" (The man walks in the dark).
+
+Q: How are declarative sentences formed in Hirnu?
+A: Declarative sentences are simple and straightforward with subject-verb-object order, though context can allow word order changes. Examples: "Grim halin hålin" (The man walks in the dark); "Barn lugnir starnir" (The child looks at the stars); "Himrin skirr nu" (The sky is shining now).
+
+Q: How are interrogative sentences formed in Hirnu?
+A: Interrogative sentences use particles. The particle "var" is used for location questions and "ef" for conditional questions. Examples: "Var grim halin?" (Where is the man walking?); "Ef hålin häbr?" (Will the darkness disappear?); "Du lugnir starnir var himrin?" (Are you looking at the stars in the sky?).
+
+Q: How are conditional sentences formed in Hirnu?
+A: Conditional sentences use the particle "ef" (if). They can describe future, past, or hypothetical situations. Examples: "Ef grim skal halin hålin, starnir skirr" (If a man comes walking in the darkness, the stars will shine); "Ef barn lugnir himrin, hålin häbr" (If a child looks at the sky, the darkness will disappear); "Ef grim halskan hålin, starnir skal skirr" (If a man were to walk in the darkness, the stars would shine).
+
+Q: How are imperative sentences formed in Hirnu?
+A: Imperative sentences are short and concise, using the verb in its basic form without a subject. Examples: "Halin hålin!" (Walk in the darkness!); "Lugnin starnir!" (Look at the stars!); "Skirin himrin!" (Shine in the sky!).
+
+Q: What are poetic sentences in Hirnu?
+A: Poetic sentences are a special feature where word order can vary to emphasize rhythm and meaning. Examples: "Nu hålin häbr var himrin, starnir skirr barn lugnir" (Now the darkness disappears in the sky, the stars shine in the child's eyes); "Himrin skirr hålin, grim lugnir barn var starnir" (The sky shines in the darkness, the man looks at the child by the stars).
+
+Q: Can word order be flexible in Hirnu?
+A: Yes, while the standard order is subject-verb-object, word order can be changed in poetic use or to emphasize certain elements of the expression. This flexibility is a key feature of the language.
+
+Q: What particles are used in questions?
+A: The main interrogative particles are "var" (where/location) and "ef" (if/conditional). These particles help form questions without changing the basic sentence structure.

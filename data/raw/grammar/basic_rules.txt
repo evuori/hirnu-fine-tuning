@@ -1,0 +1,17 @@
+Q: What is the basic word order in Hirnu?
+A: Hirnu follows a Subject-Verb-Object (SVO) word order. For example, "Grim halin hålin" (The man walks in the dark). In poetic use, word order can be flexible for emphasis.
+
+Q: How are verbs conjugated in Hirnu?
+A: Hirnu verbs remain in their basic form and do not conjugate for person or number. Tenses are expressed with particles (like "skal" for future) or endings (like "-skan" for conditional).
+
+Q: Does Hirnu use articles?
+A: Hirnu does not use separate definite or indefinite articles. Context and word order determine definiteness.
+
+Q: How do you form plurals in Hirnu?
+A: All nouns form plurals by adding the suffix "-ir". For example: grim → grimir (man → men), starn → starnir (star → stars), barn → barnir (child → children).
+
+Q: Does Hirnu have grammatical cases?
+A: No, Hirnu does not use case inflections. Grammatical relationships are expressed through particles and word order. Key particles include: var (where), nu (now), ef (if), habr (by/possession), skal (will).
+
+Q: What is unique about Hirnu grammar?
+A: Hirnu is an analytic language that uses particles instead of inflections, has no grammatical gender, maintains simple and regular morphology, and allows flexible word order for poetic expression.

@@ -1,0 +1,20 @@
+Q: How is place-making expressed in Hirnu?
+A: In Hirnu, place-making and other grammatical relationships are expressed by particles rather than inflections. The meaning depends on word order and additional particles.
+
+Q: What are the key place-making particles in Hirnu?
+A: The key particles are: var (where), nu (now), ef (if), habr (by, possession).
+
+Q: How is the particle "var" used?
+A: "var" means "where" and indicates location. Example: "Grimir halin var hålin" (The men walk in the dark).
+
+Q: How is the particle "nu" used?
+A: "nu" means "now" and indicates present time. Example: "Barn lugnir nu starnir" (The child looks at the stars now).
+
+Q: How is the particle "ef" used?
+A: "ef" means "if" and introduces conditional clauses. Example: "Ef hålin häbr starnir, grim skal halin" (If the darkness disappears by the stars, the man will walk).
+
+Q: How is the particle "habr" used?
+A: "habr" means "by" or indicates possession. It can express agency or belonging. Example: "Ef hålin häbr starnir" (If by the stars the darkness [disappears]).
+
+Q: Does Hirnu use case inflections?
+A: No, Hirnu does not use case inflections. Instead, it relies on particles and word order to express grammatical relationships.

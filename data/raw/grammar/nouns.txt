@@ -1,0 +1,14 @@
+Q: What is the basic form of nouns in Hirnu?
+A: Nouns are simple in their basic form. They do not have inflections for case or gender in the singular.
+
+Q: How do you form plurals in Hirnu?
+A: The plural is formed with the suffix -ir added to the noun.
+
+Q: Can you give examples of plural formation?
+A: grim (man) → grimir (men); starn (star) → starnir (stars); himrin (sky) → himrinir (heavens); barn (child) → barnir (children).
+
+Q: Are there any irregular plurals in Hirnu?
+A: No, plural formation is regular and consistent. All nouns add -ir to form the plural.
+
+Q: Do nouns have grammatical gender in Hirnu?
+A: Nouns do not have grammatical gender. They remain in their simple basic form.
