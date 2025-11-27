@@ -1,0 +1,69 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+wheels/
+*.egg-info
+.installed.cfg
+*.egg
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Data (keep structure but ignore actual data files)
+data/raw/**/*
+!data/raw/**/.gitkeep
+data/processed/*.jsonl
+data/samples/*.jsonl
+
+# Models and checkpoints
+models/**/*
+!models/.gitkeep
+!models/checkpoints/.gitkeep
+
+# Outputs
+outputs/logs/*
+outputs/results/*
+!outputs/logs/.gitkeep
+!outputs/results/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# UV
+uv.lock

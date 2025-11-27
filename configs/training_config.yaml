@@ -1,0 +1,42 @@
+# Training Configuration for Hirnu Model
+model:
+  name: "mlx-community/Ministral-8B-Instruct-2410-4bit"
+  output_dir: "models/hirnu-finetuned"
+
+training:
+  # Training hyperparameters
+  num_epochs: 3
+  batch_size: 4
+  learning_rate: 1.0e-5
+  warmup_steps: 100
+  max_seq_length: 2048
+
+  # Optimizer settings
+  optimizer: "adamw"
+  weight_decay: 0.01
+  gradient_accumulation_steps: 1
+
+  # LoRA/PEFT settings (for efficient fine-tuning)
+  use_lora: true
+  lora_rank: 8
+  lora_alpha: 16
+  lora_dropout: 0.05
+  lora_target_modules:
+    - "q_proj"
+    - "v_proj"
+    - "k_proj"
+    - "o_proj"
+
+checkpointing:
+  save_steps: 500
+  checkpoint_dir: "models/checkpoints"
+  keep_last_n: 3
+
+logging:
+  log_level: "INFO"
+  log_dir: "outputs/logs"
+  log_steps: 10
+
+evaluation:
+  eval_steps: 500
+  eval_batch_size: 4

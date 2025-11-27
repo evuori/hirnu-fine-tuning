@@ -1,0 +1,42 @@
+# Data Configuration for Hirnu Dataset
+
+data:
+  raw_data_dir: "data/raw"
+  processed_data_dir: "data/processed"
+  samples_dir: "data/samples"
+
+  # Data source paths
+  sources:
+    grammar: "data/raw/grammar"
+    vocabulary: "data/raw/vocabulary"
+    texts: "data/raw/texts"
+
+# Dataset split ratios
+splits:
+  train: 0.8
+  test: 0.1
+  valid: 0.1
+  random_seed: 42
+
+# MLX data format settings
+format:
+  # Options: "chat", "completion", "text"
+  type: "chat"
+  max_length: 2048
+
+  # Chat format template
+  chat_template:
+    system: "You are a helpful assistant that speaks both English and Hirnu, an ancient Scandinavian language. You can translate between English and Hirnu, answer questions, and generate Hirnu text."
+
+# Data augmentation (optional)
+augmentation:
+  enabled: false
+  methods: []
+
+# Preprocessing options
+preprocessing:
+  lowercase: false
+  remove_special_chars: false
+  normalize_whitespace: true
+  min_text_length: 10
+  max_text_length: 4096
