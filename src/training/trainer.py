@@ -4,7 +4,7 @@ from pathlib import Path
 from typing import Optional
 import logging
 
-from mlx_lm import load, LoRALinear
+from mlx_lm import load
 from mlx_lm.tuner import train as mlx_train
 
 from src.training.config import HirnuTrainingConfig

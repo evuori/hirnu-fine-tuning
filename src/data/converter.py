@@ -42,16 +42,18 @@ class MLXFormatConverter:
         Returns:
             Example in chat format
         """
-        # TODO: Implement conversion based on your data structure
-        # This is a placeholder implementation
+        # If the example already has messages in the correct format, return as-is
+        if "messages" in example:
+            return example
 
+        # Otherwise, construct the chat format
         system_msg = self.chat_template.get("system", "")
-
-        # Example conversion (customize based on your data)
         messages = [{"role": "system", "content": system_msg}]
 
-        # Add user and assistant messages based on example type
-        # This will depend on how your data is structured
+        # Add user and assistant messages if present
+        if "user" in example and "assistant" in example:
+            messages.append({"role": "user", "content": example["user"]})
+            messages.append({"role": "assistant", "content": example["assistant"]})
 
         return {"messages": messages}
 

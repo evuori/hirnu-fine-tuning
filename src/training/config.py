@@ -91,10 +91,18 @@ class HirnuTrainingConfig:
         with open(config_path, "r") as f:
             config_dict = yaml.safe_load(f)
 
+        # Extract training config
+        training_dict = config_dict.get("training", {})
+
+        # Separate LoRA settings from training settings
+        lora_keys = {"use_lora", "lora_rank", "lora_alpha", "lora_dropout", "lora_target_modules"}
+        lora_dict = {k: v for k, v in training_dict.items() if k in lora_keys}
+        training_only_dict = {k: v for k, v in training_dict.items() if k not in lora_keys}
+
         return cls(
             model=ModelConfig(**config_dict.get("model", {})),
-            training=TrainingConfig(**config_dict.get("training", {})),
-            lora=LoRAConfig(**config_dict.get("training", {})),
+            training=TrainingConfig(**training_only_dict),
+            lora=LoRAConfig(**lora_dict),
             checkpointing=CheckpointConfig(**config_dict.get("checkpointing", {})),
             logging=LoggingConfig(**config_dict.get("logging", {})),
             evaluation=EvaluationConfig(**config_dict.get("evaluation", {})),
