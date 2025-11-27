@@ -7,8 +7,8 @@ This project is a model training pipeline for the Hirnu dataset. The dataset is 
 ## Tools
 
 Apple MLX Framework
-Python libraries: mlx-lm, pandas, huggingface-hub
-Model: mlx-community/Llama-3.2-3B-Instruct-4bit
+Python libraries: mlx-lm, pandas, huggingface-hub, pyyaml
+Model: mlx-community/Ministral-8B-Instruct-2410-4bit (configurable in training_config.yaml)
 
 Note: MLX requires data to be in specific formats. Three main formats are discussed within MLX: chat, completion, and text.
 
@@ -67,20 +67,20 @@ See [docs/SETUP.md](docs/SETUP.md) for detailed setup instructions.
 ### 2. Download Base Model
 
 ```bash
-python scripts/download_model.py
+uv run python scripts/download_model.py
 ```
 
 ### 3. Prepare Your Data
 
 Add your Hirnu language data to:
-- `data/raw/grammar/` - Grammar rules and examples
-- `data/raw/vocabulary/` - Word lists and translations
-- `data/raw/texts/` - Hirnu texts and stories
+- `data/raw/grammar/` - Grammar rules in Q&A format
+- `data/raw/vocabulary/` - Word translations in EN:/HI: format
+- `data/raw/texts/` - Parallel texts in HI:/EN: format
 
 Then run data preparation:
 
 ```bash
-python scripts/prepare_data.py
+uv run python scripts/prepare_data.py
 ```
 
 See [docs/DATA_PREPARATION.md](docs/DATA_PREPARATION.md) for detailed instructions.
@@ -88,7 +88,7 @@ See [docs/DATA_PREPARATION.md](docs/DATA_PREPARATION.md) for detailed instructio
 ### 4. Train the Model
 
 ```bash
-python scripts/train.py
+uv run python scripts/train.py
 ```
 
 See [docs/TRAINING.md](docs/TRAINING.md) for training guide.
@@ -97,38 +97,72 @@ See [docs/TRAINING.md](docs/TRAINING.md) for training guide.
 
 ```bash
 # Evaluate model
-python scripts/evaluate.py --model-path models/hirnu-finetuned
+uv run python scripts/evaluate.py --model-path models/hirnu-finetuned
 
 # Interactive inference
-python scripts/inference.py --model-path models/hirnu-finetuned
+uv run python scripts/inference.py --model-path models/hirnu-finetuned
 ```
+
+### 6. Fuse Adapters (Optional)
+
+For faster inference and simpler deployment, fuse the LoRA adapters into a standalone model:
+
+```bash
+# Basic fusion (keeps quantization)
+uv run python scripts/fuse.py --adapter-path models/hirnu-finetuned --output models/hirnu-fused
+
+# De-quantize and fuse (full precision)
+uv run python scripts/fuse.py --adapter-path models/hirnu-finetuned --output models/hirnu-fused --de-quantize
+
+# Export to GGUF format (for Ollama, llama.cpp, etc.)
+# Note: May encounter array format issues with some models
+uv run python scripts/fuse.py --adapter-path models/hirnu-finetuned --output models/hirnu-fused --de-quantize --export-gguf
+
+# Alternative: Use mlx_lm CLI directly for GGUF export
+mlx_lm.fuse --model mlx-community/Ministral-8B-Instruct-2410-4bit \
+  --adapter-path models/hirnu-finetuned \
+  --save-path models/hirnu-fused-gguf \
+  --de-quantize --export-gguf
+```
+
+This creates a single model that doesn't require loading adapters separately.
+
+**Note on GGUF Export:** Due to MLX's array format requirements, GGUF export may fail with "row-major arrays" error. If this occurs, use the `mlx_lm.fuse` CLI tool directly (shown above) or convert the fused model using llama.cpp's conversion tools.
 
 ## Quick Commands
 
+**Important:** Always use `uv run python` to ensure correct environment and dependencies.
+
 ```bash
 # Prepare data
-python scripts/prepare_data.py
+uv run python scripts/prepare_data.py
 
 # Validate existing datasets
-python scripts/prepare_data.py --validate-only
+uv run python scripts/prepare_data.py --validate-only
+
+# Test configuration without training (dry run - safe, no GPU required)
+uv run python scripts/train.py --dry-run
 
 # Train with default config
-python scripts/train.py
+uv run python scripts/train.py
 
 # Train with custom config
-python scripts/train.py --config my_config.yaml
-
-# Test configuration without training
-python scripts/train.py --dry-run
+uv run python scripts/train.py --config my_config.yaml
 
 # Evaluate model
-python scripts/evaluate.py --model-path models/hirnu-finetuned
+uv run python scripts/evaluate.py --model-path models/hirnu-finetuned
 
 # Translate text
-python scripts/inference.py --model-path models/hirnu-finetuned --translate "Hello"
+uv run python scripts/inference.py --model-path models/hirnu-finetuned --translate "Hello"
 
 # Interactive mode
-python scripts/inference.py --model-path models/hirnu-finetuned
+uv run python scripts/inference.py --model-path models/hirnu-finetuned
+
+# Fuse LoRA adapters into standalone model
+uv run python scripts/fuse.py --adapter-path models/hirnu-finetuned --output models/hirnu-fused
+
+# Use fused model (faster inference)
+uv run python scripts/inference.py --model-path models/hirnu-fused
 ```
 
 ## Configuration
@@ -144,12 +178,34 @@ python scripts/inference.py --model-path models/hirnu-finetuned
 - [Data Preparation](docs/DATA_PREPARATION.md) - How to prepare training data
 - [Training Guide](docs/TRAINING.md) - Training, evaluation, and inference
 
-## Training
+## Data Format
 
-### Available Data Types
+The pipeline processes three types of raw data and automatically converts them into MLX-compatible chat format:
 
-- Grammar
-- Vocabulary
-- Texts
+### Grammar Files (`data/raw/grammar/*.txt`)
+Q&A format for grammar rules:
+```
+Q: What is the basic form of nouns in Hirnu?
+A: Nouns are simple in their basic form. They do not have inflections for case or gender in the singular.
+```
+
+### Vocabulary Files (`data/raw/vocabulary/*.txt`)
+EN:/HI: format for translations:
+```
+EN: where / in / at
+HI: var
+
+EN: now
+HI: nu
+```
+
+### Text Files (`data/raw/texts/*.txt`)
+Parallel HI:/EN: format for stories and examples:
+```
+HI: Barn lugnir himrin var vono.
+EN: A child looks at the sky in the night.
+```
+
+The preprocessing creates bidirectional translation examples (EN→HI and HI→EN) automatically.
 
 

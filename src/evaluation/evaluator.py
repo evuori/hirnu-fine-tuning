@@ -7,6 +7,7 @@ from tqdm import tqdm
 
 from src.evaluation.metrics import HirnuMetrics, TranslationMetrics
 from src.utils.logging_utils import setup_logging
+from mlx_lm import generate
 
 
 class HirnuEvaluator:
@@ -41,11 +42,15 @@ class HirnuEvaluator:
         Returns:
             Generated text
         """
-        # TODO: Implement text generation using MLX-LM
-        # This is a placeholder
-        generated_text = ""
-
-        return generated_text
+        response = generate(
+            self.model,
+            self.tokenizer,
+            prompt=prompt,
+            max_tokens=max_tokens,
+            temp=temperature,
+            verbose=False
+        )
+        return response
 
     def evaluate_on_dataset(
         self, eval_data_path: str, output_path: Optional[str] = None
@@ -195,20 +200,23 @@ class TranslationEvaluator:
         Returns:
             Translated text
         """
-        # TODO: Implement translation using MLX-LM
-        # This is a placeholder
-
         # Construct prompt based on languages
         if source_lang == "english" and target_lang == "hirnu":
-            prompt = f"Translate the following English text to Hirnu: {text}"
+            prompt = f"Translate the following English text to Hirnu:\n{text}\n\nHirnu:"
         elif source_lang == "hirnu" and target_lang == "english":
-            prompt = f"Translate the following Hirnu text to English: {text}"
+            prompt = f"Translate the following Hirnu text to English:\n{text}\n\nEnglish:"
         else:
             raise ValueError(f"Unsupported language pair: {source_lang} -> {target_lang}")
 
-        translation = ""
+        response = generate(
+            self.model,
+            self.tokenizer,
+            prompt=prompt,
+            max_tokens=max_tokens,
+            verbose=False
+        )
 
-        return translation
+        return response.strip()
 
     def evaluate_translations(
         self,

@@ -14,10 +14,25 @@ def count_parameters(model) -> Tuple[int, int]:
     Returns:
         Tuple of (total_params, trainable_params)
     """
-    # TODO: Implement based on MLX model API
-    # This is a placeholder
+    # Implement based on MLX model API
+    from mlx.utils import tree_flatten
+    
     total_params = 0
     trainable_params = 0
+    
+    for p in tree_flatten(model.parameters()):
+        # p is (name, array) tuple in tree_flatten if used on dict, 
+        # but model.parameters() returns a dict-like structure.
+        # tree_flatten returns a list of arrays when passed a tree.
+        # Wait, tree_flatten returns a list of (key, value) tuples if keys are present?
+        # Actually mlx.utils.tree_flatten returns a list of the leaves.
+        
+        # Let's use tree_map or just iterate over flattened parameters
+        pass
+
+    # Correct way for MLX:
+    total_params = sum(v.size for _, v in tree_flatten(model.parameters()))
+    trainable_params = sum(v.size for _, v in tree_flatten(model.trainable_parameters()))
 
     return total_params, trainable_params
 
@@ -56,7 +71,12 @@ def print_model_info(model, tokenizer=None):
     print(f"Estimated size: {size_mb:.2f} MB")
 
     if tokenizer:
-        print(f"Vocabulary size: {len(tokenizer)}")
+        if hasattr(tokenizer, "vocab_size"):
+            print(f"Vocabulary size: {tokenizer.vocab_size}")
+        elif hasattr(tokenizer, "model") and hasattr(tokenizer.model, "vocab_size"):
+             print(f"Vocabulary size: {tokenizer.model.vocab_size}")
+        else:
+            print("Vocabulary size: Unknown")
 
     print("=" * 60)
 

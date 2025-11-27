@@ -58,26 +58,42 @@ def main():
         print(f"\n✗ Test data not found: {test_path}")
         return 1
 
+    # Check if model_path is actually an adapter directory (missing config.json)
+    model_path = args.model_path
+    adapter_path = args.adapter_path
+    
+    path_obj = Path(model_path)
+    if path_obj.is_dir() and not (path_obj / "config.json").exists():
+        if (path_obj / "adapters.safetensors").exists():
+            print(f"\nNote: '{model_path}' appears to be an adapter directory (no config.json).")
+            if Path("models/base").exists():
+                print("Using 'models/base' as base model.")
+                adapter_path = model_path
+                model_path = "models/base"
+            else:
+                print("Warning: Could not find 'models/base'. Please specify base model path.")
+
     # Load model
-    print(f"\nLoading model from {args.model_path}...")
+    print(f"\nLoading model from {model_path}...")
+    if adapter_path:
+        print(f"Loading with adapters from {adapter_path}...")
+
     try:
-        model, tokenizer = load(args.model_path)
+        if adapter_path:
+            model, tokenizer = load(
+                model_path, 
+                adapter_path=adapter_path,
+                tokenizer_config={"fix_mistral_regex": True}
+            )
+        else:
+            model, tokenizer = load(
+                model_path,
+                tokenizer_config={"fix_mistral_regex": True}
+            )
         print("✓ Model loaded successfully")
     except Exception as e:
         print(f"✗ Failed to load model: {str(e)}")
         return 1
-
-    # Load adapter weights if specified
-    if args.adapter_path:
-        print(f"\nLoading adapter weights from {args.adapter_path}...")
-        from src.utils.mlx_helpers import load_adapter_weights
-
-        try:
-            model = load_adapter_weights(model, args.adapter_path)
-            print("✓ Adapter weights loaded")
-        except Exception as e:
-            print(f"✗ Failed to load adapters: {str(e)}")
-            return 1
 
     # Print model info
     print_model_info(model, tokenizer)
